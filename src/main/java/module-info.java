@@ -5,10 +5,10 @@ module com.example.atm_machine {
     requires mysql.connector.java;
 
 
-    opens com.example.atm_machine to javafx.fxml;
-    exports com.example.atm_machine;
-    exports com.example.atm_machine.Entity;
-    opens com.example.atm_machine.Entity to javafx.fxml;
-    exports com.example.atm_machine.Service;
-    exports com.example.atm_machine.Connectivity;
+    opens com.atm_machine to javafx.fxml;
+    exports com.atm_machine;
+    exports com.atm_machine.Entity;
+    opens com.atm_machine.Entity to javafx.fxml;
+    exports com.atm_machine.Service;
+    exports com.atm_machine.Connectivity;
 }

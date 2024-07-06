@@ -9,7 +9,7 @@
 <?import javafx.scene.control.Button?>
 
 <GridPane xmlns:fx="http://javafx.com/fxml"
-          fx:controller="com.example.atm_machine.ATMLoginController">
+          fx:controller="com.atm_machine.ATMLoginController">
     <padding><Insets top="10" right="10" bottom="10" left="10"/></padding>
     <hgap>10</hgap>
     <vgap>10</vgap>

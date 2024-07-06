@@ -6,7 +6,7 @@
 
 <?import javafx.geometry.Insets?>
 <GridPane xmlns:fx="http://javafx.com/fxml"
-          fx:controller="com.example.atm_machine.ATMMainMenuController">
+          fx:controller="com.atm_machine.ATMMainMenuController">
     <padding><Insets top="10" right="10" bottom="10" left="10"/></padding>
     <hgap>10</hgap>
     <vgap>10</vgap>

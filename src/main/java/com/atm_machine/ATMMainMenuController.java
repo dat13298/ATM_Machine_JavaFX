@@ -1,11 +1,11 @@
-package com.example.atm_machine;
+package com.atm_machine;
 
-import com.example.atm_machine.Entity.Account;
-import com.example.atm_machine.Entity.Transaction;
-import com.example.atm_machine.Service.AccountDAO;
-import com.example.atm_machine.Service.DepositThread;
-import com.example.atm_machine.Service.TransactionDAO;
-import com.example.atm_machine.Service.WithdrawalThread;
+import com.atm_machine.Entity.Account;
+import com.atm_machine.Entity.Transaction;
+import com.atm_machine.Service.AccountDAO;
+import com.atm_machine.Service.DepositThread;
+import com.atm_machine.Service.TransactionDAO;
+import com.atm_machine.Service.WithdrawalThread;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;

@@ -1,7 +1,7 @@
-package com.example.atm_machine.Service;
+package com.atm_machine.Service;
 
-import com.example.atm_machine.Entity.Account;
-import com.example.atm_machine.Entity.Transaction;
+import com.atm_machine.Entity.Account;
+import com.atm_machine.Entity.Transaction;
 
 //abstract class transactionService
 public abstract class TransactionService {

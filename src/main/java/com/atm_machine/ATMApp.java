@@ -1,10 +1,10 @@
-package com.example.atm_machine;
+package com.atm_machine;
 
-import com.example.atm_machine.Connectivity.MySQLConnection;
-import com.example.atm_machine.Entity.Account;
-import com.example.atm_machine.Entity.Transaction;
-import com.example.atm_machine.Service.AccountDAO;
-import com.example.atm_machine.Service.TransactionDAO;
+import com.atm_machine.Entity.Transaction;
+import com.atm_machine.Service.AccountDAO;
+import com.atm_machine.Service.TransactionDAO;
+import com.atm_machine.Connectivity.MySQLConnection;
+import com.atm_machine.Entity.Account;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;

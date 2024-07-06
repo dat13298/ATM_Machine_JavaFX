@@ -1,4 +1,4 @@
-package com.example.atm_machine.Entity;
+package com.atm_machine.Entity;
 
 public class Account {
 //    properties

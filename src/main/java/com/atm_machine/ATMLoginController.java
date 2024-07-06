@@ -1,7 +1,7 @@
-package com.example.atm_machine;
+package com.atm_machine;
 
-import com.example.atm_machine.Entity.Account;
-import com.example.atm_machine.Service.AccountDAO;
+import com.atm_machine.Entity.Account;
+import com.atm_machine.Service.AccountDAO;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;

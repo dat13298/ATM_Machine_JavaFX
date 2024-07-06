@@ -1,4 +1,4 @@
-package com.example.atm_machine.Generic;
+package com.atm_machine.Generic;
 
 public interface ATMRepository<T> {
     T save(T t);

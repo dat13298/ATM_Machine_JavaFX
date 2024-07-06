@@ -1,4 +1,4 @@
-package com.example.atm_machine.Connectivity;
+package com.atm_machine.Connectivity;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

@@ -1,11 +1,11 @@
-package com.example.atm_machine.Service;
+package com.atm_machine.Service;
 
-import com.example.atm_machine.Connectivity.MySQLConnection;
-import com.example.atm_machine.Entity.Account;
-import com.example.atm_machine.Entity.EStatus;
-import com.example.atm_machine.Entity.ETransactionType;
-import com.example.atm_machine.Entity.Transaction;
-import com.example.atm_machine.Generic.ATMRepository;
+import com.atm_machine.Entity.EStatus;
+import com.atm_machine.Entity.ETransactionType;
+import com.atm_machine.Entity.Transaction;
+import com.atm_machine.Generic.ATMRepository;
+import com.atm_machine.Connectivity.MySQLConnection;
+import com.atm_machine.Entity.Account;
 
 import java.sql.*;
 import java.time.LocalDateTime;
@@ -57,7 +57,7 @@ public class TransactionDAO implements ATMRepository<Transaction> {
 //    get all Transaction by account
     public List<Transaction> findByAccount(Account account) {
         PreparedStatement pstmt = null;
-        String query = "SELECT t.transactionId, t.amount, t.description, t.date_time, t.card_number, t.type, t.status " +
+        String query = "SELECT t.transaction_id, t.amount, t.description, t.date_time, t.card_number, t.type, t.status " +
                 "FROM transactions t " +
                 "INNER JOIN accounts a ON t.card_number = a.card_number " +
                 "WHERE a.card_number = ?";

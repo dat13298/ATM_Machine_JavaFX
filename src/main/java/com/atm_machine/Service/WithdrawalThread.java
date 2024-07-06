@@ -1,9 +1,9 @@
-package com.example.atm_machine.Service;
+package com.atm_machine.Service;
 
-import com.example.atm_machine.Entity.Account;
-import com.example.atm_machine.Entity.EStatus;
-import com.example.atm_machine.Entity.ETransactionType;
-import com.example.atm_machine.Entity.Transaction;
+import com.atm_machine.Entity.ETransactionType;
+import com.atm_machine.Entity.Transaction;
+import com.atm_machine.Entity.Account;
+import com.atm_machine.Entity.EStatus;
 
 import java.time.LocalDateTime;
 

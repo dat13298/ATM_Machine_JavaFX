@@ -1,4 +1,4 @@
-package com.example.atm_machine.Entity;
+package com.atm_machine.Entity;
 
 public enum EStatus {
     C("Completed"), P("Pending"), R("Reject");
