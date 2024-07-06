@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Button?>
+
+<GridPane xmlns:fx="http://javafx.com/fxml"
+          fx:controller="com.example.atm_machine.ATMLoginController">
+    <padding><Insets top="10" right="10" bottom="10" left="10"/></padding>
+    <hgap>10</hgap>
+    <vgap>10</vgap>
+    <Label text="Card Number:" GridPane.columnIndex="0" GridPane.rowIndex="0"/>
+    <TextField fx:id="cardNumberInput" GridPane.columnIndex="1" GridPane.rowIndex="0"/>
+    <Label text="PIN:" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+    <PasswordField fx:id="pinInput" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+    <Button text="Login" onAction="#handleLogin" GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+    <Label fx:id="messageLabel" GridPane.columnIndex="1" GridPane.rowIndex="3"/>
+</GridPane>

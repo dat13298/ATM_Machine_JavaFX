@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<?import javafx.geometry.Insets?>
+<GridPane xmlns:fx="http://javafx.com/fxml"
+          fx:controller="com.example.atm_machine.ATMMainMenuController">
+    <padding><Insets top="10" right="10" bottom="10" left="10"/></padding>
+    <hgap>10</hgap>
+    <vgap>10</vgap>
+
+    <Button text="Check Balance" onAction="#handleCheckBalance" GridPane.columnIndex="0" GridPane.rowIndex="0"/>
+    <Button text="Deposit" onAction="#handleDeposit" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+    <Button text="Withdraw" onAction="#handleWithdraw" GridPane.columnIndex="0" GridPane.rowIndex="2"/>
+    <Button text="Transaction History" onAction="#handleTransactionHistory" GridPane.columnIndex="0" GridPane.rowIndex="3"/>
+
+    <Label fx:id="messageLabel" GridPane.columnIndex="1" GridPane.rowIndex="0" GridPane.rowSpan="2"/>
+    <ListView fx:id="transactionListView" GridPane.columnIndex="1" GridPane.rowIndex="2" GridPane.rowSpan="3"/>
+    <!-- New fields for date range selection -->
+    <Label text="Start Date:" GridPane.columnIndex="0" GridPane.rowIndex="5"/>
+    <DatePicker fx:id="startDatePicker" GridPane.columnIndex="1" GridPane.rowIndex="5"/>
+    <Label text="End Date:" GridPane.columnIndex="0" GridPane.rowIndex="6"/>
+    <DatePicker fx:id="endDatePicker" GridPane.columnIndex="1" GridPane.rowIndex="6"/>
+    <Button text="Filter" onAction="#handleFilterTransactions" GridPane.columnIndex="1" GridPane.rowIndex="7"/>
+
+    <Button text="LogOut" onAction="#handleLogout" GridPane.columnIndex="0" GridPane.rowIndex="4"/>
+</GridPane>
