@@ -87,4 +87,5 @@ public class AccountDAO implements ATMRepository<Account> {
         }
         return hashText.toString();
     }
+//    card_number hash: 1234567890 - PIN hash: 177113
 }
