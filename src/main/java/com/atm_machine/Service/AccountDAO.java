@@ -77,7 +77,7 @@ public class AccountDAO implements ATMRepository<Account> {
         return null;
     }
 //    hash string
-    public static String encryptUsingMD5(String input) throws NoSuchAlgorithmException, NoSuchAlgorithmException {
+    public static String encryptUsingMD5(String input) throws NoSuchAlgorithmException {
         MessageDigest md = MessageDigest.getInstance("MD5");
         byte[] messageDigest = md.digest(input.getBytes());
         BigInteger no = new BigInteger(1, messageDigest);
