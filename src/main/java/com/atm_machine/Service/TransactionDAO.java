@@ -68,7 +68,7 @@ public class TransactionDAO implements ATMRepository<Transaction> {
             while (rs.next()) {
 //                set value Transaction
                 Transaction transaction = new Transaction();
-                transaction.setTransactionId(rs.getInt("transactionId"));
+                transaction.setTransactionId(rs.getInt("transaction_id"));
                 transaction.setAmount(rs.getDouble("amount"));
                 transaction.setDescription(rs.getString("description"));
                 Timestamp dateTime = rs.getTimestamp("date_time");
