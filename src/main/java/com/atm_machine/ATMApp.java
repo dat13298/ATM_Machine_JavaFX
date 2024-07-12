@@ -53,8 +53,8 @@ public class ATMApp extends Application {
 //            Instantiate the necessary object
             TextInputDialog dialog = new TextInputDialog();
             Transaction newTransaction = new Transaction();
-            AccountDAO accountDAO = new AccountDAO(MySQLConnection.getConnection());
-            TransactionDAO transactionDAO = new TransactionDAO(MySQLConnection.getConnection());
+            AccountDAO accountDAO = new AccountDAO();
+            TransactionDAO transactionDAO = new TransactionDAO();
             TransactionDAO.transactions = new ArrayList<Transaction>();
 
 //            Create FXMLLoader and set ControllerFactory
